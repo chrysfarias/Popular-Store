@@ -6,8 +6,8 @@
 </head>
 <body>
 <div class="container">
-	<div class="card" th:each="pedido: ${pedidos}">
-		<div class="card-header" th:text="${pedido.nomeProduto}">Nome do Produto</div>
+	<div class= th:each="pedido: ${pedidos}">
+		<div th:text="${pedido.nomeProduto}">Nome do Produto</div>
 		<div th:text="${pedido.valorNegociado}">Valor:<span>500</span></div>
 		<div th:text="${pedido.dataDaEntrega}">Data da Entrega:<span>10/02/2020</span></div>
 		<div>Produto</div>
