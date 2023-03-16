@@ -8,4 +8,8 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
 </qualifiedTypeNameHistroy>

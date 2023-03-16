@@ -5,8 +5,21 @@
 	
 </head>
 <body>
-<div class="container">
-	<div class="card" th:each="pedido: ${pedidos}">
+	<div class="container">
+	
+		<nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between">
+	    	<div class="navbar-nav">
+			
+				<a class="nav-link active" href="ddd">Todos </a>	
+				<a class="nav-link" href="ddd">Aguadando </a>	
+				<a class="nav-link" href="ddd">Aprovado </a>	
+				<a class="nav-link" href="ddd">Devolvido </a>
+			</div>
+			<button class="btn btn-outline-secondary" >Novo</button>				
+		</nav>	
+		
+		
+		<div class="card" th:each="pedido: ${pedidos}">
 			<div class="card-header" th:text="${pedido.nomeProduto}">Nome do Produto</div>
 			<div class ="card-body">
 			<div class="row">
