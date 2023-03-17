@@ -11,7 +11,7 @@
 			<h1 class="display-4">Novo Pedido </h1>		
 		</div>
 		
-		<form action="/pedido/novo" method ="POST">
+		<form>
 		
 			<label for=nomeProduto>Produto</label><br>	
 			<input name="nomeProduto" placeholder ="nome do produto"/><br>
