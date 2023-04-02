@@ -1,9 +1,0 @@
-package br.com.alura.mvc.mudi.model;
-
-public class Pedido {
-	Private String nomeProduto;
-	private BigDecimal valorNegociado;
-	private localDate dataDaEntrega;
-	
-
-}

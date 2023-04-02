@@ -8,33 +8,40 @@
 	<div class="container">
 	
 		<div div class="container-fluid bg-dark text-light p-5" >
-			<h1 class="display-4">Novo Pedido </h1>		
+			<h1 class="display-4">Novo Pedido</h1>		
 		</div>
 		
-		<form action="/pedido/novo" method ="POST">
-		
-			<label for=nomeProduto>Produto</label><br>	
-			<input name="nomeProduto" placeholder ="nome do produto"/><br>
-			<smal>Informe qual o nome do produto</smal><br>
+		<div class="card mt-3">
+			<form class="card-body" action="/pedido/novo" method ="POST">
 			
-			<label for=urlProduto>UrlProduto</label><br>	
-			<input name="urlProduto" placeholder ="url do produto"/><br>
-			<smal>Procure em um site o produto e cole a url da pagina aqui</smal><br>
+				<div class="mb-3">
+					<label class="form-label" for=nomeProduto>Produto</label>
+					<input type="text" class="form-control" name="nomeProduto" placeholder ="nome do produto"/>
+					<smal>Informe qual o nome do produto</smal>
+				</div>
+	
+				<div class="mb-3">
+					<label class="form-label" for=urlProduto>UrlProduto</label>
+					<input class="form-control" name="urlProduto" placeholder ="url do produto"/>
+					<smal>Procure em um site o produto e cole a url da pagina aqui</smal>
+				</div>
+				
+				<div class=mb-3>
+					<label class="form-label" for=urlImagem,>Imagem</label><br>	
+					<input class="form-control" name="urlImagem" placeholder ="url da imagem"/>
+					<smal>Copie a url de uma boa imagem do produto e cole aqui para ajudar a conseguir compradores.</smal>
+				</div>
 			
+				<div class="mb-3">
+				<label class="form-label" for=descricao>Descrição</label>
+				<textarea  class="form-control" name="descricao" placeholder ="Adicione detalhes importantes para ajudar o comprador"/></textarea>
+				</div>
+				
+				<button   class="btn btn-dark" type="submit">Cadastrar</button>		
 			
-			<label for=urlImagem,>Imagem</label><br>	
-			<input name="urlImagem" placeholder ="url da imagem"/><br>
-			<smal>Copie a url de uma boa imagem do produto e cole aqui para ajudar a conseguir compradores.</smal><br>
+			</form>
+		</div>
+		</div>
+		</body>
 			
-			<label for=descricao>Descrição</label><br>	
-			<textarea name="descricao" placeholder ="Adicione detalhes importantes para ajudar o comprador"/></textarea><br>
-			
-			<button type="submit">Cadastrar</button>
-			
-		
-		
-		
-		</form>
-		
-		
-	</div>
+	</html>
