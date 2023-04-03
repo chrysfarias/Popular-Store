@@ -12,29 +12,29 @@
 		</div>
 		
 		<div class="card mt-3">
-			<form class="card-body" action="/pedido/novo" method ="POST">
+			<form th:object="${requisicaoNovoPedido}" class="card-body" action="/pedido/novo" method ="POST">
 			
 				<div class="mb-3">
 					<label class="form-label" for=nomeProduto>Produto</label>
-					<input type="text" class="form-control" name="nomeProduto" placeholder ="nome do produto"/>
+					<input th:field="*{nomeProduto}" type="text" class="form-control" name="nomeProduto" placeholder ="nome do produto"/>
 					<smal>Informe qual o nome do produto</smal>
 				</div>
 	
 				<div class="mb-3">
 					<label class="form-label" for=urlProduto>UrlProduto</label>
-					<input class="form-control" name="urlProduto" placeholder ="url do produto"/>
+					<input th:field="*{urlProduto}" class="form-control" name="urlProduto" placeholder ="url do produto"/>
 					<smal>Procure em um site o produto e cole a url da pagina aqui</smal>
 				</div>
 				
 				<div class=mb-3>
 					<label class="form-label" for=urlImagem,>Imagem</label><br>	
-					<input class="form-control" name="urlImagem" placeholder ="url da imagem"/>
+					<input th:field="*{urlImagem}" class="form-control" name="urlImagem" placeholder ="url da imagem"/>
 					<smal>Copie a url de uma boa imagem do produto e cole aqui para ajudar a conseguir compradores.</smal>
 				</div>
 			
 				<div class="mb-3">
 				<label class="form-label" for=descricao>Descrição</label>
-				<textarea  class="form-control" name="descricao" placeholder ="Adicione detalhes importantes para ajudar o comprador"/></textarea>
+				<textarea th:field="*{descricao}" class="form-control" name="descricao" placeholder ="Adicione detalhes importantes para ajudar o comprador"/></textarea>
 				</div>
 				
 				<button   class="btn btn-dark" type="submit">Cadastrar</button>		
