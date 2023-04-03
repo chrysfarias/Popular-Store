@@ -10,7 +10,7 @@ public class RequisicaoNovoPedido {
 	@NotEmpty
 	private String nomeProduto;
 	@NotEmpty
-	private String UrlProduto;
+	private String urlProduto;
 	@NotEmpty
 	private String urlImagem;
 	
@@ -25,10 +25,10 @@ public class RequisicaoNovoPedido {
 		this.nomeProduto = nomeProduto;
 	}
 	public String getUrlProduto() {
-		return UrlProduto;
+		return urlProduto;
 	}
 	public void setUrlProduto(String urlProduto) {
-		UrlProduto = urlProduto;
+		this.urlProduto = urlProduto;
 	}
 	public String getUrlImagem() {
 		return urlImagem;
@@ -49,7 +49,7 @@ public class RequisicaoNovoPedido {
 		pedido.setNomeProduto(nomeProduto);
 		pedido.setDescricao(descricao);
 		pedido.setUrlImagem(urlImagem);
-		pedido.setUrlProduto(UrlProduto);		
+		pedido.setUrlProduto(urlProduto);		
 		return pedido;
 	}
 
