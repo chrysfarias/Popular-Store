@@ -24,7 +24,7 @@ public class PedidoformularioController {
 	
 	
 	@GetMapping("formulario")
-	public String formulario(RequisicaoNovoPedido requisicao)  {  // para não dar erros. 05 04
+	public String formulario(RequisicaoNovoPedido requisicao)  {  
 		
 		return "pedido/formulario";
 		
