@@ -23,7 +23,10 @@ public class HomeController {
 	@GetMapping("/home")
 	public String home(Model model) {		
 	List<Pedido> pedidos = pedidoRepository.findAll();
-	model.addAttribute("pedidos",pedidos); // enviando a lista para a view		
+	
+	String parametroTeste = "aprsovado";
+	model.addAttribute("pedidos",pedidos); // enviando a lista para a view
+	model.addAttribute("parametroteste", parametroTeste);
 	return "home";
 	}
 	
@@ -32,6 +35,7 @@ public class HomeController {
 		
 		 List<Pedido> pedidos = pedidoRepository.findByStatus(StatusPedido.valueOf(status.toUpperCase()));  // converter string para enum 
 		 model.addAttribute("pedidos", pedidos);
+		 model.addAttribute("status",status);
 		 return "home";
 	}	
 	
