@@ -38,7 +38,7 @@ public class HomeController {
 	
 	@ExceptionHandler(IllegalArgumentException.class)
 	public String onError() {
-		return "redirect:/pedidos/home";
+		return "redirect:pedidos/home";
 		
 	}
 

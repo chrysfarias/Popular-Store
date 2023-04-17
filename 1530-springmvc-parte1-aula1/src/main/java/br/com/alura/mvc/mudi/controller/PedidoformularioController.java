@@ -1,10 +1,13 @@
 package br.com.alura.mvc.mudi.controller;
 
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -41,7 +44,14 @@ public class PedidoformularioController {
 		Pedido pedido = requisicao.toPedido();
 		pedidoRepository.save(pedido);
 		
-		return  "redirect:/home";
+		return "redirect:home";
+	}
+	
+	@GetMapping("/home")
+	public String home(Model model) {		
+	List<Pedido> pedidos = pedidoRepository.findAll();
+	model.addAttribute("pedidos",pedidos); 
+	return "home";
 	}
 		
 	
