@@ -13,7 +13,7 @@
 				<div class="mb-3">
 					<label class="form-label" for=nomeProduto>Produto</label>
 					<input th:field="*{nomeProduto}" th:errorclass="is-invalid" type="text" class="form-control" name="nomeProduto" placeholder ="nome do produto"/>
-					<smal>Informe qual o nome do produto</smal>
+					<small>Informe qual o nome do produto</smal>
 					<div class="invalid-feedback" th:errors="*{nomeProduto}">
 						Erros do nome do produto
 					</div>
@@ -23,7 +23,7 @@
 				<div class="mb-3">
 					<label class="form-label" for=urlProduto>UrlProduto</label>
 					<input th:field="*{urlProduto}" th:errorclass="is-invalid" class="form-control" name="urlProduto" placeholder ="url do produto"/>
-					<smal>Procure em um site o produto e cole a url da pagina aqui</smal>
+					<small>Procure em um site o produto e cole a url da pagina aqui</smal>
 					<div class="invalid-feedback" th:errors="*{urlProduto}">
 						Erros url produto
 					</div>
@@ -32,7 +32,7 @@
 				<div class=mb-3>
 					<label class="form-label" for=urlImagem,>Imagem</label><br>	
 					<input th:field="*{urlImagem}"  th:errorclass="is-invalid" class="form-control" name="urlImagem" placeholder ="url da imagem"/>
-					<smal>Copie a url de uma boa imagem do produto e cole aqui para ajudar a conseguir compradores.</smal>
+					<small>Copie a url de uma boa imagem do produto e cole aqui para ajudar a conseguir compradores.</smal>
 					<div class="invalid-feedback" th:errors="*{urlImagem}">
 						Erros url imagem
 					</div>
